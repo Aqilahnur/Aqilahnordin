@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<title>Corporate Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Montserrat", sans-serif"}
+  video {
+      width: 50%;
+      height: auto;
+      margin-left: 30px;
+    }
+    
+    
+    
+ card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-top: 100px;
+  margin-left: 300px;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+    
+    
+</style>
+<body class="w3-light-gray">
+    
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>D'SAFA CAFE</b> Home</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>    
+    
+  <br>
+  <br>
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1000px" height="400px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-20 w3-brown">
+    <h1 class="w3-xxxlarge"><b>D'SAFA CAFE</b></h1>
+    <h6>Our Customer is Our Priority</h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+      <br>
+    <img src="image/kedai.jpg" alt="Business Website" width="1000" height="400">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-jumbo w3-text-bLACK w3-hide-small"><b>FOOD CAFE</b></h1>
+      <h6><button class="w3-button w3-black w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+      <p><a href="#menu" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+  </div>        
+        
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>HERE OUR NEWS MENU:</h3>
+          <h5>Sunday, <span class="w3-opacity">June 8, 2020</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="image/popia.jpg" alt="News_Menu" style="width:100%" class="w3-padding-16">
+          <p><strong>Description</strong> In this menu, our cafe create a new product which is popia that have many flavour and not the usual popia found in small stalls. In this popia we also provide flavour like cheese, chocolate, oreo and powder, white chocolate. So, it make the customer to interest with our product and make our cafe get more customer before have a news product</p>
+          <p>Besides, this menu are not found in any cafe at Bandar Laguna Merbok and Sungai Petani and when the customer want to eat, they must find the person that make popia and it will take time to get it.  With that, our cafe provide new product to the customer. The effect from this, the customer can buy anytime at our cafe because our product is very available at this area. </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="image/abg.jpg" style="width:50px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Mohd Saiful <span class="w3-opacity w3-medium">June 12, 2020, 7:00 PM</span></h4>
+                <p>Yeah it's a good food when your shop produced a new menu. I am one of those person that try this menu and yeah i'm so impressed with your menu. Next, when i come to your shop again, i will repeat this menu. So you guy's can try this menu dan i'm sure you all will not regretit <3</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>HERE OUR SPECIAL MENU:</h3>
+          <h5>TUESDAY, <span class="w3-opacity">March 23, 2020</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="image/sagu.jpg" alt="Special_menu" style="width:100%" class="w3-padding-16">
+          <p><strong>Description!</strong> This is our special menu where in this special menu it have also provide sago and gravy.  This gravy have many flavour such as honeydew melon, milky bundong and milk also brown sugar. This is the best-selling our product and most the customer when they come to the cafe will order this menu. 
+          </p>
+          <p>This menu is tastier to eat in the evening and also in the raining outside. So, that why our cafe open in the afternoon around 4 pm. Mostly there are not many cafe will serve dessert because they think customer are not to finding the cafe like this. Besides that our cafe also provide wifi the customer can come to our cafe while eating dessert
+          </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="image/aini.jpg" style="width:50px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Aini Md Saleh <span class="w3-opacity w3-medium">February 15, 2020, 8:52 PM</span></h4>
+                <p>I like the food on the menu in your cafe and the food is very cheap and worth it. .</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="image/dilah.jpeg" style="width:50px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Dilah BTS <span class="w3-opacity w3-medium">December 23, 2019, 9:12 PM</span></h4>
+                <p>Love dessert!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        
+        
+   <!-- About Section -->
+
+  <div class="w3-container w3-white  w3-padding-32" id="about">
+     <img src="image/logocafe.png" alt="Special_menu" style="width:60%" class="w3-padding-16">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-19">History:</h3>
+    <p>D’SAFA Cafe is an exquisite and high-class café serving an assortment of sweet and succulent desserts and cookies. All are created by our premium selection of ingredient, handled by well-trained staff. D’SAFA Cafe is an impeccable café, serving a large variety of desserts, fresh and scrumptious ‘popis’, and signature cookies destined to bring warmth and happiness to individuals. We only use the most high-class ingredients that bring harmonious glints to dishes created. All are handled and created with care. D'SAFA CAFE name are taken by our name. Eventhough, our background are not from business cources but my team and I also interest on a bussiness until we succesfull to established our business. At the beginning of the business, we started a business from home where every customer order will be made at home and our target customers are only the community in the vicinity of our home area. However, in 2019, our business grew until it received a warm response from customers from the states of Kedah, Penang and Perak. At the end of 1919, we managed to open a shop near Bandar Languna Merbok, Kedah. Our purpose in opening a shop in the area is because it is a strategic area. This is because, Laguna is a place close to the university area. So, it is definitely an attraction for them to come to the store to relieve stress. If the customer from the other state they can buy from online. So, this is why our motto is our customer is our priority.
+    </p>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-19">Vision</h3>
+    <p>We strive to give cafe a new look to improve the premium services performed.
+    </p>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-19">Mission</h3>
+    <p>To offer the world an enjoyable selection of desserts and cookies, complimented by carefully and deliciously prepared, all in a warm and fragrant atmosphere.
+    </p>
+  </div>
+        
+        
+  <!-- Footer -->
+<!-- Contact Section -->
+   
+      <div class="w3-white w3-margin" id="contact">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Contact</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+        <p>Any question can contact us?</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+    </div>        
+        
+        
+<hr2>
+    
+    <br>
+    
+      <!-- Footer -->
+    
+    <iframe src="http://free.timeanddate.com/clock/i7mlbky2/n122/fn11/fs20/fc909/tcf9f/pct/fti/bls3/brs3/bts3/bbs3/tt0/tw0/tm2/td1/th2/ta1/tb4" frameborder="0" width="144" height="56" allowTransparency="true"></iframe>
+    <br>
+    
+   <audio controls autoplay>
+   <source src="perfect.ogg" type="audio/ogg">
+   <source src="audio/perfect.mp3" type="audio/mpeg">
+   </audio>
+    <br>
+     <a href='https://thesiswritingservice.net/'>Writing Service for your Thesis</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=0b233807a9b5f6cd2e5bc2a58fb7ab8b3453205d'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/781766/t/6"></script>
+    
+    
+  
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <center><img src="image/creator.jpg" alt="Jane" style="width:50%" class="w3-none"></center>
+        <div class="w3-container w3-black">
+          <h4>A bit explanation about us</h4>
+          <p>The name of this shop is taken by our name and our interests in business are successful to established a business at a young age.</p>
+          <p>This cafe at Bandar Laguna Merbok Kedak</p>
+          <p>Phone Number: 013-4678190</p>
+        </div>
+      </div>
+      <hr>
+    
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Creator</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="image/qilah.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Nur Aqilah</span>
+            <br>
+            <span>State in Kedah</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="image/diyanah.jpg" alt="Image" class="w3-left w3-margin-right" style="width:40px">
+            <span class="w3-large">Nur Diyanah</span>
+            <br>
+            <span>State in Perak</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="image/tehah.jpg" alt="Image" class="w3-left w3-margin-right" style="width:40px">
+            <span class="w3-large">Nur Fatihah</span>
+            <br>
+            <span>State in Kedah</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="image/watif.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:40px">
+            <span class="w3-large">Siti Nur Awatif</span>
+            <br>
+            <span>State in Kedah</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="image/sypa.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:40px">
+            <span class="w3-large">Raudhatus Syifa</span>
+            <br>
+            <span>State in Kuala Lumpur</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Advertise</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+              <video width="300" height="170" controls>
+                  <source src="video/videopopia.mp4" type="video/mp4">
+              </video>
+               
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Us</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <a href="https://m.facebook.com/bymissfa-109270740868976/" target="_blank"</a><i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <a href="https://instagram.com/bymissfa?igshid=12smkx6whlqq7" target="_blank"</a><i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+    <hr>
+        
+    <!-- Menu -->
+        <div class="w3-white w3-margin" id="menu">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Menu</h4>
+        </div>
+        <div class="w3-container w3-white"> 
+            <br>
+  <img src="image/sagudua.jpg" alt="Sagu Tiga Beradik" style="width:70%">
+  <h1>Sagu Tiga Beradik</h1>
+  <p class="price">RM7.00</p>
+  <p><button>Add to Cart</button></p>
+</div>
+        <div class="card">
+  <img src="image/cookies.jpg" alt="Cookies" style="width:70%">
+  <h1>Kukis Celup</h1>
+  <p class="price">RM10.00</p>
+  <p><button>Add to Cart</button></p>
+</div>
+        <div class="card">
+  <img src="image/popiacoklat.jpg" alt="Popia" style="width:70%">
+  <h1>Popia Coklat</h1>
+  <p class="price">RM5.00</p>
+  <p><button>Add to Cart</button></p>
+</div>
+        <div class="card">
+  <img src="image/popiacampur.jpg" alt="Popia" style="width:70%">
+  <h1>Popia Campur</h1>
+  <p class="price">RM7.50</p>
+  <p><button>Add to Cart</button></p>
+</div>
+        <div class="card">
+  <img src="image/popiaspecial.jpg" alt="Popia" style="width:70%">
+  <h1>Popia Combo</h1>
+  <p class="price">RM12.00</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+</body>
+</html>
+
+
+
+        
+ <!-- Footer -->
+<!-- Menu -->
+  
+
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest information and our news post.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+    
+    
+ 
+<!-- End page content -->
+</div>
+  
+    
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+        
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
